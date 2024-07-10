@@ -1,0 +1,79 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>V&A PLAYER</title>
+    <script src="project.js">main.js</script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" type="text/css" href="styles.css">
+
+</head>
+<body>
+    <header>
+        <img src="/circle-trolley-online-shopping.jpg" id="logo">        <input type="text" id="search" placeholder="Search...">
+
+      <br><div id="descr">E-COMMERCE<BR>
+           PLATFORM 
+       </div
+                      <nav>
+            <button onclick="searcher()"><img src="/search-13-xxl.png" class="search-icon" id="serIcon"></button>
+                        <button onclick="remover()" id="removal">×</button>
+
+            <div id="menu">
+              <button onclick="clikon()" 
+              onmouseout="leave()"><img src="/list-round-flat.png" id="navl3"></button>
+               <div id="menuItems">
+                   <ul class="items" style="list-style: none">
+                       <li><a href="cart.html">Items in Cart</a></li><br>
+                       <li><a href="privacy.html">Privacy</a></li><br>
+                       <li><a href="about.html">About Us</a></li><br>
+                       <li><a href="pass.html">ADMIN</a></li><br>
+                       <li><a onclick="language()">Languages</a></li>
+                   </ul>
+               </div>
+            </div>
+   <div id="pro">
+       <ul>
+           <li><a href="computerPage.html"><button>COMPUTERS   &nbsp; &nbsp; &nbsp;
+</button></a></li>
+           <li><a href="Phone.html"><button>PHONE   &nbsp; &nbsp; &nbsp;
+</button></a></li>
+<li><a href="TV.html"><button>TELEVISION &nbsp; &nbsp; &nbsp;
+                 </button></a></li>
+           <li><a href="Tablet.html"><button>TABLET   &nbsp; &nbsp; &nbsp;
+</button></a></li>
+           <li><a href="Audio.html"><button>SPEAKERS   &nbsp; &nbsp; &nbsp;
+</button></a></li>
+           <li><a href="headPhone.html"><button>HEADPHONES   &nbsp; &nbsp; &nbsp;
+</button></a></li>
+           <li><a href="camera.html"><button>CAMERA   &nbsp; &nbsp; &nbsp;
+</button></a></li>
+           <li><a href="micro.html"><button>MICROPHONES  &nbsp; &nbsp; &nbsp;
+</button></a></li>
+
+           <li><a href="/Dron.html"><button>DRONE   &nbsp; &nbsp; &nbsp;
+</button></a></li>
+           <li><a href="cctv.html"><button id="lastnavb">CCTV   &nbsp; &nbsp; &nbsp;
+</button></a></li>
+       </ul>
+   </div>
+   &nbsp; &nbsp; &nbsp;
+        </nav>
+    </header>
+    <main><div id="main_section"><br><br><br><br><br>
+        <h3>Drones</h3><hr>
+        <div id="productGrid"></div>
+               <button class="cart_view" onclick="window.location.href='cart.html'" class="more-items">VIEW CART</button>
+<script>
+    const category='Drone';
+            document.addEventListener('DOMContentLoaded', function() {
+                displayProducts(category);
+            });
+</script>
+    <script src="main.js"></script>
+        <script src="script.js"></script>
+
+    </body>
