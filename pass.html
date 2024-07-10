@@ -1,0 +1,77 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>V&A PLAYER</title>
+    <script src="main.js">main.js</script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="/circle-trolley-online-shopping.jpg" id="logo">
+      <br><div id="descr">E-COMMERCE<BR>
+           PLATFORM 
+       </div
+    
+    </header>
+    <main>
+        <br><br><br><br><center><br><br><br>
+        <div id="register3"><br><br>
+            <h1 class="h1inlog">USER IDENTIFICATION </h1><br>
+                  <form id="loginForm">
+            <div class="input-group">
+                <input type="text" id="name" required>
+                <label for="username">Username</label>
+            </div>
+            <div class="input-group">
+                <input type="email" id="email" required>
+                <label for="useremail">User email</label>
+            </div>
+            <div class="input-group">
+                <input type="password" id="password" required>
+                <label for="password">Password</label>
+          
+            </div>
+            <button type="button" onclick="validator2()" class="submitt-button"><h3 style="position:relative; top:-6px;">Login as Adminstrator</h3></button><br><br>
+            
+        </form>
+  
+        </div>
+        </center>
+    </main>
+        <br><br><br><br><br><br><br>    <br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br>
+
+    <footer><br><br>
+        copyright &copy; 2024 all right reserved by developer Pacifique Niyonkuru
+    </footer>
+    <script>
+        var paper=document.querySelector("#aknya");
+        var cot="Greetings dear customer!  We are very glad to see you here on this E-commerce plattform,We wish you to satisfay your needs.But in order to keep you and your money safe in trusted condition please you have to register in the following space:";
+        var state=0;
+        function typer(){
+            if(state<cot.length){
+                paper.textContent += cot[state];
+                state++;
+                setTimeout(typer,10);
+            }
+        }
+        typer();
+        
+        function master(){
+            setTimeout(function(){
+                document.getElementById('register').style.display='block';
+            },3800)
+        }
+        master();
+    </script>
+    </body>
+    
+</body>
